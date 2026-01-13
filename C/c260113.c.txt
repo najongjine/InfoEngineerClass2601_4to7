@@ -9,7 +9,7 @@ int main()
     int int2 = 2;
     float f1 = 1.0;
 
-    printf("%d / %d : ",int1,int2);
+    printf("%d / %d : %d",int1,int2,int1/int2);
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
