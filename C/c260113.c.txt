@@ -35,8 +35,24 @@ int main()
     char ch1 = 'a'; // 상수 테이블 id 97
     char ch2 = 'A'; // 상수 테이블 id 65
     char ch0 = '0'; // 상수 테이블 id 48
-    printf("\n\n %c%c%c \n", ch1,ch2,ch0);
-    
+    printf("\n\n %c \n", ch1-32);
+
+    putchar(ch1); // 문자 하나 출력하고 다음줄 개행
+    puts("dfddf");// 문자열 보여주고 다음줄 개행
+
+    int1 = 1;
+    int2 = 2;
+    printf("!int1 :%d \n", !int2); // ! := 반전
+    // sizeof:= 데이터타입 크기 알아내기
+    printf("sizeof(int1) : %d \n", sizeof(int1));
+
+    /* 비트 산술연산자보다 우선순위가 낮아요*/
+    printf("\n\n\n");
+    int1 = 1;
+    int2 = 2;
+    printf("int1 & int2 : %d \n", int1 & int2);
+
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
