@@ -46,12 +46,18 @@ int main()
     // sizeof:= 데이터타입 크기 알아내기
     printf("sizeof(int1) : %d \n", sizeof(int1));
 
-    /* 비트 산술연산자보다 우선순위가 낮아요*/
+    /* 비트 산술연산자보다 우선순위가 낮아요
+    * {변수 비트연산 변수} 나오면 이진수 연산
+    * & | ^ << >> 
+    * (& && | || *) := c 언어에서 제일 어려운놈. 왜냐면 문맥에 따라서 
+    * 연산하는 방법이 틀려요
+    */
     printf("\n\n\n");
     int1 = 1;
     int2 = 2;
-    printf("int1 & int2 : %d \n", int1 & int2);
-
+    printf("int1 & int2 : %d \n", int1 & int2); // AND
+    printf("int1 | int2 : %d \n", int1 | int2); // OR
+    printf("int1 ^ int2 : %d \n", int1 ^ int2); // XOR
 
 }
 
