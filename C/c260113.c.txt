@@ -9,7 +9,29 @@ int main()
     int int2 = 2;
     float f1 = 1.0;
 
-    printf("%d / %d : %d",int1,int2,int1/int2);
+    /* int 수학수식 int = int */
+    //printf("%d / %d : %d \n",int1,int2,int1/int2);
+
+    /* float 수학수식 int = int | float */
+    //printf("%f / %d : %f \n", f1, int2, f1 / int2);
+
+    int1 = 0;
+    /* ++변수 := 전위연산(가장먼저). 가장 사람입장에서 상식적임
+    뭐가 있던간에, 변수 찾아가서 있는거 값 증가 시켜라 */
+    printf("int1: %d \n", ++int1);
+    printf("int1: %d \n", int1);
+
+    int1 = 0;
+    /* ++변수 := 후위연산(재일 나중). 가장 사람입장에서 비상식점
+    뭐가 있던간에, 맨 나중에 변수 찾아가서 있는거 값 증가 시켜라 */
+    printf("int1: %d \n", int1++);
+    printf("int1: %d \n", int1);
+
+    int1 = 1;
+    int2 = 2;
+    int int3 = int1++ + int2++;
+    printf("int3: %d, int1:%d, int2:%d \n", int3, int1, int2);
+    
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
