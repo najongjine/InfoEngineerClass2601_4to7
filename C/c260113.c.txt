@@ -32,11 +32,10 @@ int main()
     int int3 = int1++ + int2++;
     printf("int3: %d, int1:%d, int2:%d \n", int3, int1, int2);
 
-    int1 = 2;
-    int2 = 2;
-    int3 = int1-- + ++int1 - int2;
-    printf("int3: %d, int1:%d, int2:%d \n", int3++, int1, int2);
-
+    char ch1 = 'a'; // 상수 테이블 id 97
+    char ch2 = 'A'; // 상수 테이블 id 65
+    char ch0 = '0'; // 상수 테이블 id 48
+    printf("\n\n %c%c%c \n", ch1,ch2,ch0);
     
 }
 
