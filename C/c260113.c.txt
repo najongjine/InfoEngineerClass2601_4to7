@@ -59,8 +59,15 @@ int main()
     printf("int1 | int2 : %d \n", int1 | int2); // OR
     printf("int1 ^ int2 : %d \n", int1 ^ int2); // XOR
     printf("int2 << 1 : %d \n", int2 << 1); // 4
-    printf("int2 >> 1 : %d \n", int2 >> 1);
+    printf("int2 >> 1 : %d \n", int2 >> 1); // 1
 
+    printf("\n\n\n");
+    int1 = 1;
+    int2 = 2;
+    int3 = 1 + int1 << 2;
+    printf("int3(1 + int1 << 2)=%d \n", int3); // 1+int1 부터 먼저 함
+    int3 = int1 >> 1 + int2 | int1;
+    printf("int1 >> 1 + int2 | int1 = %d \n", int3);
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
