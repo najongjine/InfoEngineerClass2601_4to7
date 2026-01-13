@@ -22,7 +22,7 @@ int main()
     printf("int1: %d \n", int1);
 
     int1 = 0;
-    /* ++변수 := 후위연산(재일 나중). 가장 사람입장에서 비상식점
+    /* 변수++ := 후위연산(재일 나중). 가장 사람입장에서 비상식점
     뭐가 있던간에, 맨 나중에 변수 찾아가서 있는거 값 증가 시켜라 */
     printf("int1: %d \n", int1++);
     printf("int1: %d \n", int1);
@@ -31,6 +31,12 @@ int main()
     int2 = 2;
     int int3 = int1++ + int2++;
     printf("int3: %d, int1:%d, int2:%d \n", int3, int1, int2);
+
+    int1 = 2;
+    int2 = 2;
+    int3 = int1-- + ++int1 - int2;
+    printf("int3: %d, int1:%d, int2:%d \n", int3++, int1, int2);
+
     
 }
 
