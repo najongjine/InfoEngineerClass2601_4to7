@@ -67,7 +67,15 @@ int main()
     int3 = 1 + int1 << 2;
     printf("int3(1 + int1 << 2)=%d \n", int3); // 1+int1 부터 먼저 함
     int3 = int1 >> 1 + int2 | int1;
-    printf("int1 >> 1 + int2 | int1 = %d \n", int3);
+    printf("int1 >> 1 + int2 | int1 = %d \n", int3); // 1+int2 먼저 함
+
+    /* 기본 자료형:short, int, long , float, char */
+
+    int arint1[3] = { 1,3,5 };
+    char arch1[3] = "ab";
+    char arch2[3] = {'a','b','\0'};
+    printf("arch1 : %s \n",arch1); // "ab"
+    printf("arch2 : %s \n", arch2); // "ab"
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
