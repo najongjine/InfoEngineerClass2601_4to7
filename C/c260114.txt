@@ -70,7 +70,27 @@ int main()
     그 이하 F 등급 if문으로 판별기 만들어 보세요
     */
     long mygrade = 89;
-
+    if (mygrade>=90) {
+        printf("A등급 \n");
+    }
+    else if (mygrade>=80) {
+        printf("B등급 \n");
+    }
+    else if (mygrade >= 70) {
+        printf("C등급 \n");
+    }
+    else if (mygrade >= 60) {
+        printf("D등급 \n");
+    }
+    else {
+        printf("F등급 \n");
+    }
+    
+    mygrade = 'A';
+    switch (mygrade) {
+        case 90:
+            break;
+    }
 
     
 }
