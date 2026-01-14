@@ -95,22 +95,33 @@ int main()
     mygrade = 'A';
     switch (mygrade) {
         case 97:
-            printf("97");
+            printf("97\n");
             break;
         case 65:
-            printf("65");
+            printf("65\n");
 
         case 64:
-            printf("64");
+            printf("64\n");
 
         case 63:
-            printf("63");
+            printf("63\n");
             break;
         default:
-            printf("몰라");
+            printf("몰라\n");
     }
 
     
+    /* while 반복문
+    * () 안의 조건이 true 여야지 반복 수행해요
+    * 반복문을 빠져나오는 방법은 break를 만나거나
+    * 조건 false가 되거나 둘중 하나
+    */
+    while (0) {
+        printf("# 반복중");
+        //break;
+    }
+
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
