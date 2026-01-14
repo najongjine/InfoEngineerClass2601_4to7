@@ -86,13 +86,25 @@ int main()
         printf("F등급 \n");
     }
     
+    /* switch 는 if랑 비슷함
+    근데, case 에는 상수밖에 못적음
+    비교연산, 함수호출, 변수호출 그런거 못함
+    단, break 조심 해야함.
+    break 없으면 matching 되는 case 진입후,
+    break 키워드가 없으면 그냥 쭉 실행함*/
     mygrade = 'A';
     switch (mygrade) {
         case 97:
             printf("97");
             break;
         case 65:
-            printf("97");
+            printf("65");
+
+        case 64:
+            printf("64");
+
+        case 63:
+            printf("63");
             break;
         default:
             printf("몰라");
