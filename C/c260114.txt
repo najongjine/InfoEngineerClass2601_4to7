@@ -16,9 +16,9 @@ int main()
         int num1 = 1;
         printf("num1:%d \n",num1);
         if (1) {
-            int num1 = 2;
+            num1 = 2;
             if (1) {
-                int num1 = 3;
+                num1 = 3;
                 printf("num1:%d \n", num1);
             }
         }
