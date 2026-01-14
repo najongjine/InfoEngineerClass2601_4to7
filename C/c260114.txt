@@ -88,8 +88,14 @@ int main()
     
     mygrade = 'A';
     switch (mygrade) {
-        case 90:
+        case 97:
+            printf("97");
             break;
+        case 65:
+            printf("97");
+            break;
+        default:
+            printf("몰라");
     }
 
     
