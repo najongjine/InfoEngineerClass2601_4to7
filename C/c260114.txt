@@ -22,6 +22,7 @@ int main()
                 printf("num1:%d \n", num1);
             }
         }
+        printf("num1:%d \n", num1);
     }
     else {
         printf("false \n");
