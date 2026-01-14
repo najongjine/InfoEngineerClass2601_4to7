@@ -121,6 +121,20 @@ int main()
         //break;
     }
 
+    /* do while은 while을 개조 한거에요
+    조건이 false 여도 무조건 한번은 실행 해요 */
+    num1 = 3;
+    do {
+        num1--;
+        //printf("# dowhile 반복중");
+    } while (0);
+
+    num1 = 3;
+    while (num1) {
+        printf("반복 %d \n", num1);
+        num1--;
+    }
+
 
 }
 
