@@ -11,8 +11,16 @@ int main()
         i++;
     }
     printf("---------- \n");
+
+    /* for loop는 while문 개조 한거에요
+    forloop는 while문이랑 다른점이 forloop scope 안에서
+    전용으로 쓸 변수를 선언할수 있어요 
+    맨 우측에, 변수값 변경시키는 수식도 적을수 있어요 */
     for (int i = 0; i < 5;i++) {
         if (i<=5) {
+            /* forloop scope 의 i를 말하는게 아니에요
+            if 문 안에 새로운 스코프가 생겼고,
+            if 문 scope 안에 또다른 i 를 선언한 거에요*/
             int i = 0;
         }
         printf("i : %d \n", i);
