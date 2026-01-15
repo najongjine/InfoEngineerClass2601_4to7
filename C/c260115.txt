@@ -23,13 +23,16 @@ int main()
             if 문 scope 안에 또다른 i 를 선언한 거에요*/
             int i = 0;
         }
-        printf("i : %d \n", i);
+        //printf("i : %d \n", i);
     }
 
 
     int num1 = 0;
     for (int i = 0; i < 5;++i) {
+        int num1 = 0;
+        printf("num1(%d) += i(%d) == ", num1, i);
         num1 += i;
+        printf("num1(%d) \n", num1);
     }
     printf("num1: %d \n", num1);
 }
