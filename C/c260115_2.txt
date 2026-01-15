@@ -3,11 +3,15 @@
 #include <stdio.h>
 
 void test1() {
-
+    printf("test1 함수에요 \n");
 }
 
 int main()
 {
-    
+    int a = 0;
+    test1();
+    test1();
+    test1();
+    test1();
 
 }
