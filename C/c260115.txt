@@ -42,6 +42,9 @@ int main()
         }
     }
 
+    /* continue 는 loop 에서만 사용할수 있어요.
+    continue를 만나면, 아래에 있는거 실행 안하고, 
+    ++ 조건으로 올라가요 */
     num1 = 0;
     for (int i = 0; i < 5; i++) {
         if (i%2==0) {
