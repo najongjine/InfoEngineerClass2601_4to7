@@ -45,15 +45,28 @@ int main()
 
     int c = 1;
     switch (3) {
-    case 1:c += 3;
-    case 2:c++;
-    case 3:c = 0;
-    case 4:c += 3;
-    case 5:c -= 10;
-    default: c--;
-
+        case 1:c += 3;
+        case 2:c++;
+        case 3:c = 0;
+        case 4:c += 3;
+        case 5:c -= 10;
+        default: c--;
     }
-    printf("%d", c);
-}
+    //printf("%d", c);
+
+    int a[] = { 85, 2, 500, 100 };
+    int length = sizeof(a) / sizeof(a[0]);
+    for (int i = 0; i < length; i++){
+        for (int j = 0; j < length - i - 1; j++) {
+            if (a[j] > a[j + 1]) {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+    // a 의 결과는?
+   
+          
 
 }
