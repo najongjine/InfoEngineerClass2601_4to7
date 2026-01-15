@@ -2,16 +2,40 @@
 
 #include <stdio.h>
 
+/* 함수를 선언한다.
+선언만 하면 그냥 가만히 있는 기계 */
 void test1() {
     printf("test1 함수에요 \n");
+}
+int test2() {
+    return 2;
+}
+/* 자료 결합도. 데이터를 받을때, 복붙으로 받음
+원본 데이터 손상이 안감 */
+int test3(int arg1) {
+    if (arg1 % 3 == 0) {
+        return 0;
+    }
+    printf("arg1 의 주소: %p \n", &arg1);
+    return arg1;
+}
+
+void test4(int arg1, int arg2) {
+    int temp = arg1;
+    arg1 = arg2;
+    arg2 = temp;
 }
 
 int main()
 {
-    int a = 0;
-    test1();
-    test1();
-    test1();
-    test1();
-
+    int a = 1;
+    int b = 2;
+    test4(a, b);
+    printf("%d, %d, \n", a, b);
+    /* 함수를 호출하다 := 함수 안에 있는 내용물을
+    실행한다 */
+    for (int i = 0; i < test2();i++) {
+        //test1();
+    }
+    
 }
