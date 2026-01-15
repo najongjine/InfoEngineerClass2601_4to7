@@ -25,4 +25,11 @@ int main()
         }
         printf("i : %d \n", i);
     }
+
+
+    int num1 = 0;
+    for (int i = 0; i < 5;++i) {
+        num1 += i;
+    }
+    printf("num1: %d \n", num1);
 }
