@@ -20,22 +20,31 @@ int test3(int arg1) {
     return arg1;
 }
 
-void test4(int arg1, int arg2) {
+int test4(int arg1, int arg2) {
     int temp = arg1;
     arg1 = arg2;
     arg2 = temp;
+    return arg1, arg2;
 }
 
 int main()
 {
     int a = 1;
     int b = 2;
-    test4(a, b);
-    printf("%d, %d, \n", a, b);
+    
+    printf("%d,  \n", test4(a, b));
     /* 함수를 호출하다 := 함수 안에 있는 내용물을
     실행한다 */
     for (int i = 0; i < test2();i++) {
         //test1();
     }
     
+
+    /* 배열을 출력하는 함수를 만들어 보세요 */
+    int ar1[3] = { 1,2,3 };
+
+    for (int i = 0; i < sizeof(ar1) / sizeof(ar1[0]); i++) {
+        printf("%d ",ar1[i]);
+    }
+
 }
