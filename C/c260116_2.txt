@@ -4,6 +4,16 @@
 int* get_min_max(int* arr, int size, int* max, int* min) {
 	*max = *arr;
 	*min = *arr;
+
+	for (int i = 1; i < size;i++) {
+		if (*(arr + i) > *max) {
+			*max = *(arr + i);
+		}
+		if (*(arr+i) < *min) {
+			*min = *(arr + i);
+		}
+
+	}
 }
 
 
@@ -29,7 +39,10 @@ int main()
 
 	int nums[] = { 10,55,23,7,88,30 };
 	int size = sizeof(nums) / sizeof(nums[0]);
-
+	int max_val, min_val;
+	get_min_max(nums, size, &max_val, &min_val);
+	printf("max: %d \n", max_val);
+	printf("min: %d \n", min_val);
 
 }
 
