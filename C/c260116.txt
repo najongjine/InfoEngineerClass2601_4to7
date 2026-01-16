@@ -35,10 +35,17 @@ int main()
     /* c 언어는 문자열을 포인터로 관리해요
     배열도 포인터고, 타입 *  이것도 포인터에요 */
     char car1[4] = "abc";
-    
 
     shuffleArray2(car1);
     printf("car1: %s \n", car1);
+
+
+    int num1 = 3 > 1 ? 1 : -1;
+
+    int a = 10;
+    int b = 20;
+    int result = (a > b) ? a : b;
+    printf("%d", result);
 
 }
 
