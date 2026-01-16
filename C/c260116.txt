@@ -39,13 +39,17 @@ int main()
     shuffleArray2(car1);
     printf("car1: %s \n", car1);
 
-
+    /* 비교 연산자 먼저하고,
+    true 면 : 기준 왼쪽, false면 : 기준 오른쪽 */
     int num1 = 3 > 1 ? 1 : -1;
 
     int a = 10;
     int b = 20;
     int result = (a > b) ? a : b;
     printf("%d", result);
+
+
+    int arr1[2][3] = { {1,2,3},{4,5,6} };
 
 }
 
