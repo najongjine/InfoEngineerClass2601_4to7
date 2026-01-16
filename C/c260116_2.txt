@@ -9,7 +9,7 @@ int main()
 	&데이터 := 주소 뽑아내기 */
 	int a = 1;
 	printf("a 의 주소: %p \n", &a);
-	printf("a 가 가진 값: %p \n", a);
+	printf("a 가 가진 값: %d \n", a);
 
 }
 
