@@ -15,10 +15,18 @@ void printArray(int ar1[],int length) {
 
 int main()
 {
-    /* 배열을 출력하는 함수를 만들어 보세요 */
+    /* ar1 은 {} 배열의 시작 주소를 저장하고 있어요 */
     int ar1[3] = { 1,2,3 };
+    printf("ar1: %p \n",ar1);
+    printf("ar1[0]: %d \n",ar1[0]);
+    printf("*(ar1+0): %d \n", *(ar1+0));
+    /* shuffleArray의 매게변수에 ar1이 가지고 있는 주소
+    ({}배열의 시작 주소) 를 복붙해서 주는 거에요 
+    이걸 stamp 결합도라고 해요 */
     shuffleArray(ar1, sizeof(ar1) / sizeof(ar1[0]));
     printArray(ar1,sizeof(ar1)/sizeof(ar1[0]));
+
+
     
 }
 
