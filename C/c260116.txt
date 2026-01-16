@@ -7,10 +7,16 @@ void shuffleArray(int ar1[], int length) {
     ar1[0] = ar1[1];
     ar1[1] = temp;
 }
+void shuffleArray2(char car1[]) {
+    char temp = car1[0];
+    car1[0] = car1[1];
+    car1[1] = temp;
+}
 void printArray(int ar1[],int length) {
     for (int i = 0; i < length; i++) {
         printf("%d ", ar1[i]);
     }
+    printf("\n");
 }
 
 int main()
@@ -26,7 +32,17 @@ int main()
     shuffleArray(ar1, sizeof(ar1) / sizeof(ar1[0]));
     printArray(ar1,sizeof(ar1)/sizeof(ar1[0]));
 
-
+    /* c 언어는 문자열을 포인터로 관리해요
+    배열도 포인터고, 타입 *  이것도 포인터에요 */
+    char car1[5] = "abc";
+    char* car2 = car1;
+    car2[0] = car2[1];
     
+
+    car1[5] = "abc";
+
+    shuffleArray2(car1);
+    printf("car1: %s \n", car1);
+
 }
 
