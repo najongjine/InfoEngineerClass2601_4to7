@@ -1,6 +1,11 @@
 
 #include <stdio.h>
 
+int* get_min_max(int* arr, int size, int* max, int* min) {
+	*max = *arr;
+	*min = *arr;
+}
+
 
 int main()
 {
@@ -23,6 +28,7 @@ int main()
 	printf("a: %d \n", a);
 
 	int nums[] = { 10,55,23,7,88,30 };
+	int size = sizeof(nums) / sizeof(nums[0]);
 
 
 }
