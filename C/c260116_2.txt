@@ -1,16 +1,27 @@
 
 #include <stdio.h>
-
+// { 10,55,23,7,88,30 };
 int* get_min_max(int* arr, int size, int* max, int* min) {
+	printf(" --------------- \n");
+	printf("arr 주소: %d \n", arr);
+	printf("max 주소: %d \n", max);
+	printf("min 주소: %d \n", min);
 	*max = *arr;
 	*min = *arr;
+	printf("%d 원산지에 값 넣기: %d \n", max, *arr);
+	printf("%d 원산지에 값 넣기: %d \n", min, *arr);
+	printf("---------\n");
 
 	for (int i = 1; i < size;i++) {
+		printf("*(%d + %d) > %d \n", arr, i, *max);
 		if (*(arr + i) > *max) {
 			*max = *(arr + i);
+			printf("*(%d)= *(%d + %d) \n", max, arr, i);
 		}
+		printf("*(%d + %d) < %d \n", arr, i, *max);
 		if (*(arr+i) < *min) {
 			*min = *(arr + i);
+			printf("*(%d)= *(%d + %d) \n", min, arr, i);
 		}
 
 	}
