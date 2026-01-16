@@ -55,5 +55,13 @@ int main()
 	printf("max: %d \n", max_val);
 	printf("min: %d \n", min_val);
 
+
+	int nums2[] = { 1,3,5 };
+	int* pnums2 = nums2;
+	int** ppnums2 = &pnums2;
+	printf("nums2:%d \n", nums2);
+	printf("pnums2:%d \n", pnums2);
+	printf("ppnums2:%d \n", ppnums2);
+
 }
 
