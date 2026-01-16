@@ -1,5 +1,7 @@
 
 #include <stdio.h>
+/* stamp 결합도. 원본을(주소)를 주는것
+원본 내용이 바뀜 */
 void shuffleArray(int ar1[], int length) {
     int temp = ar1[0];
     ar1[0] = ar1[1];
