@@ -17,5 +17,10 @@ int main()
 	printf("pa 주소의 원본값: %d \n", *pa);
 	printf("pa 주소의 원본값: %d \n", pa[0]);
 
+	a = 10;
+	pa = &a;
+	*pa = 20;
+	printf("a: %d \n", a);
+
 }
 
