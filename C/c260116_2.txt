@@ -15,6 +15,7 @@ int main()
 	printf("pa 의 주소: %p \n", &pa);
 	printf("pa 가 가진 값: %p \n", pa);
 	printf("pa 주소의 원본값: %d \n", *pa);
+	printf("pa 주소의 원본값: %d \n", pa[0]);
 
 }
 
