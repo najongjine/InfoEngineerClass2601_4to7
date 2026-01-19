@@ -43,5 +43,18 @@ int main()
 	reverseStr(text);
 	printf("text : %s \n", text);
 
+
+    int a = 1;
+	int* pa = &a;
+	int** ppa = &pa;
+
+	printf("a: %d \n", a);
+	printf("&a: %d \n", &a);
+	printf("pa: %d \n", pa);
+	printf("ppa: %d \n", ppa);
+	printf("--------\n");
+	printf("*ppa: %d \n", *ppa);
+	printf("**ppa: %d \n", **ppa);
+
 }
 
