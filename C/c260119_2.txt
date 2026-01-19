@@ -1,14 +1,17 @@
 
 #include <stdio.h>
 
-struct s {
-	int x : 2;
-	short y : 4;
+/* java class의 아버지.
+class 보다 성능은 많이 떨어짐
+상속 X method 같이 포함 X */
+struct S {
+	int x;
+	short y;
 };
 
 int main()
 {
-
+	struct S s = { 2,4 };
 
 }
 
