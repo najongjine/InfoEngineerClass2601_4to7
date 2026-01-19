@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+struct s {
+	int x : 2;
+	short y : 4;
+};
+
+int main()
+{
+
+
+}
+
