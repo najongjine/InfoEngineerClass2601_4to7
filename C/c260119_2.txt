@@ -8,7 +8,10 @@ struct S {
 	int x;
 	short y;
 };
-
+void change(struct S s) {
+	s.x += 10;
+	s.y += 10;
+}
 int main()
 {
 	int      a =   1;
@@ -25,6 +28,11 @@ int main()
 	printf("s.y: %d \n ", s.y);  
 	printf("s2.x: %d \n ", s2.x);
 	printf("s2.y: %d \n ", s2.y);
+
+	s.x = 1;
+	s.y = 2;
+	change(s);
+	// s의 x,y 값은?
 
 }
 
