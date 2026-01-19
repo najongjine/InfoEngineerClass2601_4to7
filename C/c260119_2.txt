@@ -11,7 +11,11 @@ struct S {
 
 int main()
 {
+	int      a =   1;
+	int ar[] = { 1,2 };
+	/* s 는 주소 저장하는게 아님!!! 그냥 쌩 원본 데이터 저장함 */
 	struct S s = { 2,4 };
+	printf("s: %d \n ", s); // 2
 
 }
 
