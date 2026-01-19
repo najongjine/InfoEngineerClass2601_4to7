@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main()
+{
+	int num1 = 1;
+	int *pnum1 = &num1;
+	char* str1 = "abcd";
+	char** pstr1 = &str1;
+
+	printf("num1: %d \n", num1);
+	printf("pnum1: %d \n", pnum1);
+}
+
