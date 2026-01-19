@@ -8,6 +8,12 @@ struct S {
 	int x;
 	short y;
 };
+/*
+이거 자료결합도.
+struct 을 printf 로 찍어보면 주소 안나옴. 쌩 값나옴
+그러면 매개변수에 값 복붙해줄때, 주소 복붙이 아니라
+쌩 값 복붙임
+*/
 void change(struct S s) {
 	s.x += 10;
 	s.y += 10;
@@ -33,6 +39,6 @@ int main()
 	s.y = 2;
 	change(s);
 	// s의 x,y 값은?
-
+	printf("s.x: %d, s.y:%d \n", s.x, s.y);
 }
 
