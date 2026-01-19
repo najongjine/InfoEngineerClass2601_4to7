@@ -16,10 +16,12 @@ int main()
 	printf("str(c) : %c \n", *str1);
 
 	printf("----\n");
-	str1 = "abc";
+	str1 = "acg";
 	printf("str1: %s \n", str1);
 	printf("str1: %s \n", str1+1);
 	printf("str1: %c \n", *(str1 + 2));
 	printf("str1: %c \n", *str1 + 2);
+	printf("a의 asci: %d \n", 'a');
+	printf("99의 문자: %c \n", 99);
 }
 
