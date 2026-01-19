@@ -10,5 +10,9 @@ int main()
 
 	printf("num1: %d \n", num1);
 	printf("pnum1: %d \n", pnum1);
+	printf("*pnum1: %d \n", *pnum1);
+	printf("str이 가진 주소 : %d \n", str1);
+	printf("str : %s \n", str1);
+	printf("str(c) : %c \n", *str1);
 }
 
