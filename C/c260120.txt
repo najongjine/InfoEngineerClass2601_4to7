@@ -8,6 +8,11 @@ struct Node {
 	int data;
 	struct Node* next;
 };
+typedef struct {
+	char name[10];
+	int age;
+}Person;
+
 int main()
 {	
 	struct Point p1 = { 10,20 };
@@ -22,7 +27,12 @@ int main()
 	struct Node c = { 30,NULL };
 	a.next = &b;
 	b.next = &c;
+	c.next = &a;
+	//printf("%d \n", a.next->next->next->data);
 
-	printf("%d \n", a.next->next->data);
+	Person p[] = { {"Kim",20},{"Lee",30},{"Park",40} };
+	Person* pperson = p;
+	pperson++;
+	printf("%s \n", pperson->name);
 }
 
