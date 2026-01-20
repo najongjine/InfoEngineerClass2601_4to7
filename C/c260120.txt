@@ -14,13 +14,15 @@ int main()
 	struct Point* ptr = &p1;
 
 	// 둘다 같은 의미
-	printf("%d \n", ptr->x);
-	printf("%d \n", (*ptr).y);
+	//printf("%d \n", ptr->x);
+	//printf("%d \n", (*ptr).y);
 
 	struct Node a = { 10,NULL };
 	struct Node b = { 20,NULL };
 	struct Node c = { 30,NULL };
 	a.next = &b;
 	b.next = &c;
+
+	printf("%d \n", a.next->next->data);
 }
 
