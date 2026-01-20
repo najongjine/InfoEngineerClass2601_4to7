@@ -4,6 +4,10 @@ struct Point {
 	int x;
 	int y;
 };
+struct Node {
+	int data;
+	struct Node* next;
+};
 int main()
 {	
 	struct Point p1 = { 10,20 };
@@ -12,5 +16,11 @@ int main()
 	// 둘다 같은 의미
 	printf("%d \n", ptr->x);
 	printf("%d \n", (*ptr).y);
+
+	struct Node a = { 10,NULL };
+	struct Node b = { 20,NULL };
+	struct Node c = { 30,NULL };
+	a.next = &b;
+	b.next = &c;
 }
 
