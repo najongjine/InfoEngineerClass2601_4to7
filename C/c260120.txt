@@ -5,11 +5,12 @@ struct Point {
 	int y;
 };
 int main()
-{
+{	
 	struct Point p1 = { 10,20 };
 	struct Point* ptr = &p1;
 
-	printf("p1: %d \n", p1);
-	printf("ptr: %d \n", ptr);
+	// 둘다 같은 의미
+	printf("%d \n", ptr->x);
+	printf("%d \n", (*ptr).y);
 }
 
