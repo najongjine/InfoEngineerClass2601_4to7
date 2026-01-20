@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+struct Data {
+	int a;
+	int b;
+};
+
+void func(struct Data* p) {
+	p->a = p->a + 5;
+	p->b = p->b - 5;
+}
+
+int main()
+{	
+	struct Data d = { 10,20 };
+	func(&d);
+	printf("%d \n", d.a + d.b);
+}
+
