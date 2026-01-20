@@ -23,3 +23,31 @@ int main()
 	printf("sum : %d \n", sum);
 }
 
+-----------------
+
+
+
+#include <stdio.h>
+struct Node {
+	int n;
+	struct Node* link;
+};
+
+int main()
+{	
+	struct Node n1 = { 100,NULL };
+	struct Node n2 = { 200,NULL };
+	struct Node n3 = { 300,NULL };
+	n1.link = &n2;
+	n2.link = &n3;
+	struct Node* p = &n1;
+	if (p->link != NULL) {
+		p->link = p->link->link;
+	}
+	int total = 0;
+	for (; p != NULL;p=p->link) {
+		total += p->n;
+	}
+	printf("%d \n", total);
+}
+
