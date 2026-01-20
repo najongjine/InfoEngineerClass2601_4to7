@@ -1,19 +1,25 @@
 
 #include <stdio.h>
-struct Data {
-	int a;
-	int b;
+struct Node {
+	int n;
+	struct Node* next;
 };
-
-void func(struct Data* p) {
-	p->a = p->a + 5;
-	p->b = p->b - 5;
-}
 
 int main()
 {	
-	struct Data d = { 10,20 };
-	func(&d);
-	printf("%d \n", d.a + d.b);
+	struct Node a = { 10,NULL };
+	struct Node b = { 20,NULL };
+	struct Node c = { 30,NULL };
+
+	struct Node* head = &a;
+	a.next = &b;
+	b.next = &c;
+
+	int sum = 0;
+	struct Node* p;
+	for (p = head; p != NULL; p=p->next) {
+		if (p->n > 15) sum += p->n;
+	}
+	printf("sum : %d \n", sum);
 }
 
