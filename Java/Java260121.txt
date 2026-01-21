@@ -87,6 +87,9 @@ public class Java260121 {
 		String str1="abc";
 		String str2="abc";
 		String str3=new String();
+		System.out.println("str1의 주소(ID): " + System.identityHashCode(str1));
+        System.out.println("str2의 주소(ID): " + System.identityHashCode(str2));
+        System.out.println("str3의 주소(ID): " + System.identityHashCode(str3));
 		if(str1==str2) {
 			System.out.println("str1, str2 둘이 같아요");
 		}
@@ -95,3 +98,4 @@ public class Java260121 {
 	}
 
 }
+
