@@ -1,0 +1,45 @@
+package com.java_4to7;
+
+class Circle{
+	public int a=1;
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		/* 클래스는 static 공간에 설계도가 있고, static 데이터가 있어요
+		 * 클래스를 진짜 사용하기 위해서는 new 시켜줘야 해요
+		 * 이걸 전문용어로 instance, 객체화 시킨다고 해요
+		 * 
+		 *  객체는 heap 공간에 만들어지고, 주소를 퉤 뱉어요.
+		 *  이걸 변수에 저장 하는 거에요
+		 * */
+		Circle circle=new Circle();
+		
+		byte bnum=1;
+		short srt1=1;
+		int num1=2;
+		long lnum1=3;
+		
+		float f1=1.1f;
+		double d1=1.2;
+		
+		boolean b1=true;
+		
+		char char1='c';
+		String str1="abc";
+		
+		if(bnum==srt1) {
+			System.out.println("둘이 같아요");
+		}else if(bnum > 100) {
+			System.out.println("bnum은 100보다 커요");
+		}else {
+			
+		}
+		
+	}
+
+}
+
+
+-----------------------
