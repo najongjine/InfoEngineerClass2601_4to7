@@ -68,19 +68,29 @@ public class Java260121 {
 		 * 타입이 대문자다 := 주소저장 */
 		Circle c1=new Circle();
 		Circle c2=new Circle();
-		System.out.println("c1: "+c1);
-		System.out.println("c2: "+c2);
+		//System.out.println("c1: "+c1);
+		//System.out.println("c2: "+c2);
+		//System.out.println("c1.a: "+c1.a);
+		//System.out.println("c2.a: "+c2.a);
 		if(c1==c2) {
-			System.out.println("둘이 같아요");
+			//System.out.println("둘이 같아요");
 		}else {
-			System.out.println("둘이 틀려요");
+			//System.out.println("둘이 틀려요");
 		}
 		
 		if(c1.a==c2.a) {
-			System.out.println(".a 둘이 같아요");
+			//System.out.println(".a 둘이 같아요");
 		}else {
-			System.out.println(".a 둘이 틀려요");
+			//System.out.println(".a 둘이 틀려요");
 		}
+		
+		String str1="abc";
+		String str2="abc";
+		String str3=new String();
+		if(str1==str2) {
+			System.out.println("str1, str2 둘이 같아요");
+		}
+		
 		
 	}
 
