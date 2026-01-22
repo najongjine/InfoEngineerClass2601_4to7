@@ -1,7 +1,7 @@
 package com.java_4to7;
 
 class Bread{
-	
+	String name="빵";
 }
 
 public class Java260121 {
@@ -23,9 +23,17 @@ public class Java260121 {
 		 * 주소 나와요 */
 		Bread bread=new Bread();
 		Bread bread2=new Bread();
-		if(bread == bread2) {
-			System.out.println("bread1, bread2 는 같아요");
+		bread.name="작은빵";
+		bread2.name="큰빵";
+		Bread bread3=bread;
+		if(bread==bread3) {
+			System.out.println("bread,bread3 같아요");
 		}
+		bread3.name="대왕카스테라";
+		System.out.println("bread.name: "+bread.name);
+		System.out.println("bread3.name: "+bread3.name);
+		
+		
 		
 		
 	}
