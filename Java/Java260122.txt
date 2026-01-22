@@ -120,3 +120,31 @@ public class Java260121 {
 	}
 
 }
+
+
+-----
+
+package com.java_4to7;
+
+/* java 에는 static 영역이란게 있어요.
+ * static 영역은 어떠한 scope 에서도 접근이 가능해요 */
+class Cat{
+	String name="야옹이";
+}
+class Dog{
+	String name="멍멍이";
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		if(true) {
+			new Dog();
+		}
+		if(true) {
+			new Cat();
+		}
+		
+	}
+
+}
