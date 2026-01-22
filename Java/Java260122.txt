@@ -64,3 +64,31 @@ public class Java260121 {
 }
 
 -----------------
+
+package com.java_4to7;
+
+class Bread{
+	String name="빵";
+	/* String은 그냥 원본값 복붙하자...
+	 * 자료결합도 = int, short, long, float, double...
+	 * String, Struct */
+	public void Change(String _str1) {
+		_str1+="a";
+	}
+	public void Change(Bread _b) {
+		_b.name+="a";
+	}
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		String str1= "abc";
+		Bread bread=new Bread();
+		bread.Change(str1);
+		bread.Change(bread);
+		System.out.println(bread.name);
+		
+	}
+
+}
