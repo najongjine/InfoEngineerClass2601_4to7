@@ -97,3 +97,26 @@ public class Java260121 {
 	}
 
 }
+
+----
+
+package com.java_4to7;
+
+
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		int a = 10;
+        for (int i = 0; i < 5; i++) {
+            if (i % 2 == 1) {
+                a += i;
+            } else {
+                a -= i;
+            }
+        }
+        System.out.println(a);
+		
+	}
+
+}
