@@ -39,3 +39,28 @@ public class Java260121 {
 	}
 
 }
+
+------------------
+
+
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+
+		String str1= new String("abc");
+		String str2= "abc";
+		String str3= "abc";
+		if(str2==str3) {
+			System.out.println("str2,str3 같아요");
+		}
+		if(str1.equals(str3)) {
+			System.out.println("str1,str2 같아요");
+		}
+		
+		
+	}
+
+}
+
+-----------------
