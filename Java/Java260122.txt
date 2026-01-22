@@ -1,0 +1,33 @@
+package com.java_4to7;
+
+class Bread{
+	
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		/* 그림으로 설명 들었을땐 str1은 abc 배열의 시작주소를
+		 * 갖다는다라고 했어요.
+		 * print 로 찍어보니 값이 바로 나왔어요
+		 * 이뜻은 주소를 안가지고 있단 뜻이 아니라,
+		 * str1, str2가 주소 저장하고 있는건 맞아요.
+		 * print 할때는 지 멋대로 String은 원본값 보여준다 */
+		String str1= new String("abc");
+		String str2= new String("abc");
+		if(str1==str2) {
+			System.out.println("str1과 str2는 같아요");
+		}
+		System.out.println(str1);
+		/* 우리가 만든 커스텀 클래스는 print 해보면
+		 * 주소 나와요 */
+		Bread bread=new Bread();
+		Bread bread2=new Bread();
+		if(bread == bread2) {
+			System.out.println("bread1, bread2 는 같아요");
+		}
+		
+		
+	}
+
+}
