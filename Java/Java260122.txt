@@ -75,6 +75,9 @@ class Bread{
 	public void Change(String _str1) {
 		_str1+="a";
 	}
+	/* Stamp 결합도 주소가 오는거다
+	 * 주소 받은데로, 원산지 접근해서 데이터 조작한거임
+	 *  */
 	public void Change(Bread _b) {
 		_b.name+="a";
 	}
@@ -86,6 +89,8 @@ public class Java260121 {
 		String str1= "abc";
 		Bread bread=new Bread();
 		bread.Change(str1);
+		/* 지가 가진 함수에 지를 넣음. 결론은
+		 * 자기의 주소를 넘겨준거임 */
 		bread.Change(bread);
 		System.out.println(bread.name);
 		
