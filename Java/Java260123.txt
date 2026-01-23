@@ -89,9 +89,10 @@ class Animal {
 public class Java260121 {
 
 	public static void main(String[] args) {
-		Animal animal=new Animal();
+		Animal animal=new Animal(2);
 		animal.makeSound();
 		
 	}
 
 }
+
