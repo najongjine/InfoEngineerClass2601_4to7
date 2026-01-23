@@ -59,3 +59,39 @@ public class Java260121 {
 	}
 
 }
+
+
+--------
+
+package com.java_4to7;
+
+class Animal {
+	/* 클래스는 만들어질때 항상 생성자가 발동한다 
+	 * 만약, 생성자를 하나도 안만들었으면, 지가 껍데기 생성자를
+	 * 컴파일 단계에서 만든다 */
+	
+	int leg=4;
+	Animal(){
+		System.out.println("animal 탄생");
+	}
+	Animal(int _leg){
+		this();
+		leg=_leg;
+	}
+
+	void makeSound() {
+		System.out.println("으러렁");
+	}
+}
+
+
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		Animal animal=new Animal();
+		animal.makeSound();
+		
+	}
+
+}
