@@ -119,7 +119,7 @@ class Animal {
 		System.out.println("으러렁");
 	}
 }
-class Dog{
+class Dog extends Animal{
 	boolean fur=true;
 	
 	Dog(){
@@ -137,3 +137,4 @@ public class Java260121 {
 	}
 
 }
+
