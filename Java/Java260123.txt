@@ -8,7 +8,11 @@ class Animal {
 }
 /* 어떤 클래스를 extends 로 받으면 이걸 상속 받았다 하고
  * Animal(부모) <- Dog(자식) 이렇게 도형으로 그릴수도 있다
- * 상속받은 자식은 부모의 모든것을 다 가져갈수 있다 */
+ * 상속받은 자식은 부모의 모든것을 다 가져갈수 있다 
+ * 
+ * 헌데... 부모랑 자식에 똑같은 이름의 변수가 있다?
+ * 그러면 그냥 자기꺼 변수를 쓴다. 절대 부모변수 값 + 자식값 아니다
+ * */
 class Dog extends Animal{
 	boolean fur=true;
 	int leg=8;
@@ -20,7 +24,7 @@ public class Java260121 {
 		Animal animal=new Animal();
 		animal.makeSound();
 		Dog dog=new Dog();
-		
+		System.out.println(dog.leg);
 		
 	}
 
