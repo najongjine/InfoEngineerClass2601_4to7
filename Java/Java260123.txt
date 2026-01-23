@@ -6,14 +6,21 @@ class Animal {
 		System.out.println("으러렁");
 	}
 }
+/* 어떤 클래스를 extends 로 받으면 이걸 상속 받았다 하고
+ * Animal(부모) <- Dog(자식) 이렇게 도형으로 그릴수도 있다
+ * 상속받은 자식은 부모의 모든것을 다 가져갈수 있다 */
 class Dog extends Animal{
 	boolean fur=true;
+	int leg=8;
 }
 
 public class Java260121 {
 
 	public static void main(String[] args) {
 		Animal animal=new Animal();
+		animal.makeSound();
+		Dog dog=new Dog();
+		
 		
 	}
 
