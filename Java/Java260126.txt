@@ -193,6 +193,10 @@ public class Java260121 {
 		 * 타입은 부모, new는 자식
 		 * 타입기반 언어는 뭐 어찌됬건 타입이 먼저다 */
 		Animal animalDog=new Dog(100);
+		
+		/* 상속관계에서 똑같은 이름의 method가 있다?
+		 * static이 아니다?
+		 * 그럼 자식꺼 쓴다 */
 		animalDog.attack();
 	}
 
