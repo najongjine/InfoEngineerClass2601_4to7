@@ -112,6 +112,12 @@ class Animal{
 	public int returnFood() {
 		return food;
 	}
+	public void setFood(int num) {
+		if(num < 10) {
+			return;
+		}
+		food=num;
+	}
 }
 class Dog extends Animal{
 	String skill="물어뜯기";
@@ -128,7 +134,8 @@ public class Java260121 {
 	public static void main(String[] args) {
 		Dog dog=new Dog();
 		Animal animal=new Animal();
-		System.out.println(dog.hp); // 10
+		dog.setFood(100);
+		System.out.println(dog.returnFood());
 		
 		
 		/* new 를 해서, 각 변수가 가지고 있는 주소값이 달라도,
@@ -136,3 +143,4 @@ public class Java260121 {
 	}
 
 }
+
