@@ -21,3 +21,35 @@ public class Java260121 {
 	}
 
 }
+
+
+
+-----
+
+
+package com.java_4to7;
+
+class Animal{
+	static int count=0;
+	int id=0;
+	
+	Animal(){
+		count++;
+		id=count;
+	}
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		Animal animal1=new Animal();
+		Animal animal2=new Animal();
+		Animal animal3=new Animal();
+		
+		System.out.println("animal1 count: "+animal1.count);
+		System.out.println("animal1 id: "+animal1.id);
+		System.out.println("animal3 count: "+animal3.count);
+		System.out.println("animal3 id: "+animal3.id);
+	}
+
+}
