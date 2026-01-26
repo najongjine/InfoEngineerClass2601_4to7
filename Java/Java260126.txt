@@ -1,0 +1,21 @@
+package com.java_4to7;
+
+class Animal{
+	/*static 변수는 전역 변수랑 비슷해요 
+	 * new Animal() 이거 안하고도 그냥 갔다 쓸수 있어요*/
+	static int hp=100;
+	static public void showHp() {
+		System.out.println("Animal hp: "+hp);
+	}
+}
+
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		//Animal animal=new Animal();
+		System.out.println("hp : "+Animal.hp);
+		Animal.showHp();
+	}
+
+}
