@@ -164,6 +164,9 @@ class Animal{
 	public int getFood() {
 		return food;
 	}
+	public void attack() {
+		System.out.println("으러렁");
+	}
 	
 }
 class Dog extends Animal{
@@ -173,6 +176,9 @@ class Dog extends Animal{
 	}
 	Dog(int hp){
 		super(hp);
+	}
+	public void attack() {
+		System.out.println("dog "+skill);
 	}
 }
 
@@ -187,7 +193,7 @@ public class Java260121 {
 		 * 타입은 부모, new는 자식
 		 * 타입기반 언어는 뭐 어찌됬건 타입이 먼저다 */
 		Animal animalDog=new Dog(100);
-		
+		animalDog.attack();
 	}
 
 }
