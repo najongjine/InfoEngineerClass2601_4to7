@@ -90,3 +90,49 @@ public class Java260121 {
 	}
 
 }
+
+
+-----
+
+package com.java_4to7;
+
+class Animal{
+	/* static 은 상속 개념이 아님.*/
+	static int hp=100;
+	/* 지금까지는 자식은 부모꺼 다 가져가도 된다고 생각 했어요
+	 * 그런데 생각해보니 부모가 너무 억울해. 그래서 부모꺼를
+	 * 지키는 방법이 필요 했어요. 그것이 private*/
+	private int food=1000;
+	int id=0;
+	public void showHP() {
+		System.out.println("Animal hp:"+hp);
+	}
+	/* private 이 걸린 속성은 자기 자신이 접근 할수 있는
+	 * method를 만들어 줘야 되요. 이걸 getter setter*/
+	public int returnFood() {
+		return food;
+	}
+}
+class Dog extends Animal{
+	String skill="물어뜯기";
+	//int id=1;
+	
+	public void useSkill() {
+		System.out.println("dog "+skill);
+	}
+	
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		Dog dog=new Dog();
+		Animal animal=new Animal();
+		System.out.println(dog.hp); // 10
+		
+		
+		/* new 를 해서, 각 변수가 가지고 있는 주소값이 달라도,
+		 * static은 전역 변수라서, 모든 객체가 바라보는 값은 같음. */
+	}
+
+}
