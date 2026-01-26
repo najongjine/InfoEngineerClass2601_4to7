@@ -181,7 +181,9 @@ class Dog extends Animal{
 public class Java260121 {
 
 	public static void main(String[] args) {
-		
+		Dog dog=new Dog();
+		Animal animal=new Animal(50);
+		Animal animalDog=new Dog(100);
 	}
 
 }
