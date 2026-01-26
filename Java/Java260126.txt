@@ -61,6 +61,7 @@ public class Java260121 {
 package com.java_4to7;
 
 class Animal{
+	/* static 은 상속 개념이 아님.*/
 	static int hp=100;
 	int id=0;
 	public void showHP() {
@@ -80,7 +81,12 @@ public class Java260121 {
 
 	public static void main(String[] args) {
 		Dog dog=new Dog();
+		Animal animal=new Animal();
+		animal.hp=10;
+		System.out.println(dog.hp); // 10
+		
+		/* new 를 해서, 각 변수가 가지고 있는 주소값이 달라도,
+		 * static은 전역 변수라서, 모든 객체가 바라보는 값은 같음. */
 	}
 
 }
-
