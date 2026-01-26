@@ -147,7 +147,6 @@ public class Java260121 {
 
 ----
 
-
 package com.java_4to7;
 
 class Animal{
@@ -183,8 +182,12 @@ public class Java260121 {
 	public static void main(String[] args) {
 		Dog dog=new Dog();
 		Animal animal=new Animal(50);
+		
+		/* up casting
+		 * 타입은 부모, new는 자식
+		 * 타입기반 언어는 뭐 어찌됬건 타입이 먼저다 */
 		Animal animalDog=new Dog(100);
+		
 	}
 
 }
-
