@@ -53,3 +53,34 @@ public class Java260121 {
 	}
 
 }
+
+
+---
+
+
+package com.java_4to7;
+
+class Animal{
+	static int hp=100;
+	int id=0;
+	public void showHP() {
+		System.out.println("Animal hp:"+hp);
+	}
+}
+class Dog extends Animal{
+	String skill="물어뜯기";
+	//int id=1;
+	public void useSkill() {
+		System.out.println("dog "+skill);
+	}
+	
+}
+
+public class Java260121 {
+
+	public static void main(String[] args) {
+		Dog dog=new Dog();
+	}
+
+}
+
