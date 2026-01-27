@@ -198,3 +198,42 @@ public class Java260121 {
 	}
 
 }
+
+
+------
+
+package com.java_4to7;
+
+interface Soundable{
+	void sound();
+	void move();
+}
+
+class Dog implements Soundable{
+	public void sound() {
+		System.out.println("멍멍");
+		
+	}
+	public void move() {
+		System.out.println("강아지가 네발로 뛰어감");
+		
+	}
+}
+class Bird implements Soundable{
+	public void sound() {
+		System.out.println("짹짹");
+		
+	}
+	public void move() {
+		System.out.println("새가 푸드덕 날아감");
+		
+	}
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
