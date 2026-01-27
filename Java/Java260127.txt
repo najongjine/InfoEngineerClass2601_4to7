@@ -86,3 +86,28 @@ public class Java260121 {
 
 }
 
+
+-----
+
+package com.java_4to7;
+
+/* 추상 클래스 */
+abstract class Animal{
+	static String name="내발짐승";
+	protected int hp=0;
+	Animal(){
+		this.hp=10;
+	}
+	public void attack() {
+		System.out.println("할퀴기");
+	}
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		Animal animal=new Animal();
+		
+	}
+
+}
+
