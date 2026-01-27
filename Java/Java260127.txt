@@ -51,6 +51,21 @@ class Animal{
 		
 	}
 }
+/* 업캐스팅 -
+ * 타입을 중점으로 두고 시작함.
+ * 속성은 당연히 자기꺼 쓰고, 일반 메소드는 오버라이딩 되있나 체크만 해주면 됨
+ * 일반 속성과 method는 new () 이걸 했을때, 뭘 갔다 쓸지 결정을 함
+ * 하지만 static은 프로그램 시작전에 이미 만들어 져있기 때문에
+ * overriding 이 안일어남
+
+ this()- 자기 자신 클래스를 뜻함.
+ super()- 부모를 뜻함
+ 자식에서 super.attack() 아니면 super() 이렇게 코드를 적으면
+ 부모에 있는 method나 생성자를 호출하게 되는것임
+ 
+ 부모가 자식에 있는 property에 접근하는 유일한 방법은
+ method override 가 있다.
+ *  */
 class Dog extends Animal{
 	int hp=10;
 	String name="닥터훈스";
@@ -65,8 +80,9 @@ class Dog extends Animal{
 public class Java260121 {
 	public static void main(String[] args) {
 		Animal animal=new Dog();
-		
+		animal.attack();
 		
 	}
 
 }
+
