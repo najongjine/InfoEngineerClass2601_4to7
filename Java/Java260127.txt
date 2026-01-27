@@ -7,19 +7,27 @@ class Animal{
 	public void attack() {
 		System.out.println("할키기");
 	}
+	public void getName() {
+		
+	}
 }
 class Dog extends Animal{
 	int hp=10;
+	String name="닥터훈스";
 	public void attack() {
 		super.attack();
 		System.out.println("물기");
+	}
+	public void getName() {
+		System.out.println("name: "+name);
 	}
 }
 
 public class Java260121 {
 	public static void main(String[] args) {
 		Animal animal=new Dog();
-		animal.attack();
+		animal.getName();
+		
 	}
 
 }
