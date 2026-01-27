@@ -98,21 +98,38 @@ package com.java_4to7;
 abstract class Animal{
 	static String name="내발짐승";
 	protected int hp=0;
+	protected int food=10;
 	Animal(){
 		this.hp=10;
 	}
 	public void attack() {
 		System.out.println("할퀴기");
 	}
+	abstract int getFood();
 }
 class Dog extends Animal{
 	static String name="멍멍이";
+
+	@Override
+	int getFood() {
+		// TODO Auto-generated method stub
+		return food;
+	}
+}
+class Cat extends Animal{
+	static String name="야옹이";
+
+	@Override
+	int getFood() {
+		// TODO Auto-generated method stub
+		return food;
+	}
 }
 
 public class Java260121 {
 	public static void main(String[] args) {
-		Animal animal=new Animal();
-		Dog dog=new Dog();
+		Animal dog=new Dog();
+		Animal cat=new Cat();
 		
 		
 	}
