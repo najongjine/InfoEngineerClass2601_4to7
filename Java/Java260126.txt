@@ -201,3 +201,17 @@ public class Java260121 {
 	}
 
 }
+
+
+interface myType{
+	num1:number;
+	name:string;
+}
+
+let a:any ={
+	num1:1,
+	name:"홍길동",
+	money:1000
+}
+a:myType
+a.num1, a.name
