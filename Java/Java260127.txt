@@ -143,16 +143,23 @@ public class Java260121 {
 
 package com.java_4to7;
 
+/* interface는 abstract class의 업그레이드판
+ * interface 단독으로 구체화 못시키고
+ * interface 안에서 함수 구체화 못시켜요
+ * interface 안에 만든 속성은 무조건 static final이 되요 */
 interface Animal{
+	int hp=10; // static final 이라서 변경 불가능.
 	public void makeSound();
 	public void attack();
 }
-interface pest{
+interface Pest{
 	public void drinkBool();
 	public void disease();
 }
 
-class Dog  implements Animal, pest{
+
+/* interface는 여러개 상속 받을수 있어요. */
+class Dog  implements Animal, Pest{
 
 	@Override
 	public void drinkBool() {
@@ -179,8 +186,14 @@ class Dog  implements Animal, pest{
 
 public class Java260121 {
 	public static void main(String[] args) {
+		/* type이 Animal. Dog class에 능력이 4개 있지만,
+		 * Animal type엔 능력이 2개밖에 없어서
+		 * dog. 찍으면 2개밖에 안보여요 */
+		Animal dog=new Dog();
+		Pest dog2= new Dog();
 		
-		
+		/* Dog type은 능력이 4개니깐 4개 다 보여요  */
+		Dog dog3=new Dog();
 		
 	}
 
