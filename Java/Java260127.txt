@@ -31,3 +31,42 @@ public class Java260121 {
 	}
 
 }
+
+
+------
+
+
+package com.java_4to7;
+
+class Animal{
+	
+	int hp=100;
+	int food=10;
+	String name="굼뱅이";
+	
+	static public void attack() {
+		System.out.println("할키기");
+	}
+	public void getName() {
+		
+	}
+}
+class Dog extends Animal{
+	int hp=10;
+	String name="닥터훈스";
+	static public void attack() {
+		System.out.println("물기");
+	}
+	public void getName() {
+		System.out.println("name: "+name);
+	}
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		Animal animal=new Dog();
+		
+		
+	}
+
+}
