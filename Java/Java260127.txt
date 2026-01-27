@@ -91,7 +91,10 @@ public class Java260121 {
 
 package com.java_4to7;
 
-/* 추상 클래스 */
+/* 추상 클래스-
+ * 얘는 가지 자신으로 구체화 못함
+ * ex: new Animal() 안됨
+ * 얘를 쓰고 싶으면 무조건 상속을 시켜줘야함 */
 abstract class Animal{
 	static String name="내발짐승";
 	protected int hp=0;
@@ -108,10 +111,10 @@ class Dog extends Animal{
 
 public class Java260121 {
 	public static void main(String[] args) {
-		Animal animal=new Dog();
+		Animal animal=new Animal();
 		Dog dog=new Dog();
+		
 		
 	}
 
 }
-
