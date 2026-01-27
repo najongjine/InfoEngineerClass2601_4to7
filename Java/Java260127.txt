@@ -231,12 +231,23 @@ class Bird implements Soundable{
 }
 
 public class Java260121 {
+	/* 다형성을 사용하니, 구체화가 어떻게 됬건 신경 안쓰고,
+	 * 똑같은 사용법을 유지할수 있어요.
+	 * 즉, 유지보수가 좋다라고 말했어요 */
 	public static void makeItAct(Soundable s) {
 		s.sound();
 		s.move();
 	}
 	public static void main(String[] args) {
+		/* 다형성을 이용하면, new는 재멋대로 해도
+		 * 부모 타입으로 두면 배열에 다 넣을수 있어요.
+		 * method가 기능이거든요, 즉 사용법도 달라지지 않아요
+		 * 그래서 20년전 기준으로는 코드를 조금만 고치고,
+		 * 코드를 재사용할수 있는 혁신이어서, 이름을 다형성으로 지었어요 */
 		Soundable[] animals= {new Dog(), new Bird()};
+		
+		/* 자바의 신기능 forloop
+		 * animals 에서 하나씩 꺼내서 animal 변수에 담기 */
 		for (Soundable animal : animals) {
 			makeItAct(animal);
 		}
