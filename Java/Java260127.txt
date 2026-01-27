@@ -102,10 +102,14 @@ abstract class Animal{
 		System.out.println("할퀴기");
 	}
 }
+class Dog extends Animal{
+	static String name="멍멍이";
+}
 
 public class Java260121 {
 	public static void main(String[] args) {
-		Animal animal=new Animal();
+		Animal animal=new Dog();
+		Dog dog=new Dog();
 		
 	}
 
