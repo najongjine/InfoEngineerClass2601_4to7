@@ -135,3 +135,53 @@ public class Java260121 {
 	}
 
 }
+
+
+
+-----------
+
+
+package com.java_4to7;
+
+interface Animal{
+	public void makeSound();
+	public void attack();
+}
+interface pest{
+	public void drinkBool();
+	public void disease();
+}
+
+class Dog  implements Animal, pest{
+
+	@Override
+	public void drinkBool() {
+		System.out.println("벼룩이 개 피 빨아먹음");
+	}
+
+	@Override
+	public void disease() {
+		System.out.println("개 몸안에 기생충 낳음");
+		
+	}
+
+	@Override
+	public void makeSound() {
+		System.out.println("멍멍");
+	}
+
+	@Override
+	public void attack() {
+		System.out.println("물기");
+	}
+	
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
