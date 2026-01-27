@@ -231,9 +231,15 @@ class Bird implements Soundable{
 }
 
 public class Java260121 {
+	public static void makeItAct(Soundable s) {
+		s.sound();
+		s.move();
+	}
 	public static void main(String[] args) {
-		
-		
+		Soundable[] animals= {new Dog(), new Bird()};
+		for (Soundable animal : animals) {
+			makeItAct(animal);
+		}
 	}
 
 }
