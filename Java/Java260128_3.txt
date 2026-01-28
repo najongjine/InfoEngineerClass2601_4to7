@@ -83,3 +83,43 @@ public class Java260121 {
 	}
 
 }
+
+
+----
+
+
+package com.java_4to7;
+
+interface Oper {
+    int doWork(int a, int b);
+}
+
+class Machine {
+    Machine() { System.out.print("M "); }
+    
+    void execute(Oper op, int x, int y) {
+        try {
+            System.out.print("E ");
+            if (y == 0) throw new ArithmeticException();
+            System.out.print(op.doWork(x, y) + " ");
+        } catch (Exception e) {
+            System.out.print("C ");
+        } finally {
+            System.out.print("F ");
+        }
+    }
+}
+public class Java260121 {
+	public static void main(String[] args) {
+		 Machine m = new Machine();
+	        
+	        // 1번 실행: 익명 클래스 활용
+	        m.execute(new Oper() {
+	            public int doWork(int a, int b) { return a / b; }
+	        }, 10, 2);
+	        
+	        // 2번 실행: 람다식 활용
+	        m.execute((a, b) -> a / b, 5, 0);
+	}
+
+}
