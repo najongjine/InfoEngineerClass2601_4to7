@@ -1,0 +1,21 @@
+package com.java_4to7;
+
+interface MyFunc{
+	int max(int a,int b);
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		// 익명(이름 안붙여준) 클래스로 직접 구현
+		MyFunc f=new MyFunc() {
+			@Override
+			public int max(int a, int b) {
+				// TODO Auto-generated method stub
+				return a>b? a:b;
+			}
+		};
+		System.out.println(f.max(5, 10));
+		
+	}
+
+}
