@@ -3,14 +3,23 @@ package com.java_4to7;
 interface MyFunc{
 	int max(int a,int b);
 }
+class Test implements MyFunc{
+	public int max(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
 
 public class Java260121 {
 	public static void main(String[] args) {
-		// 익명(이름 안붙여준) 클래스로 직접 구현
+		// 이게 정석
+		MyFunc a=new Test();
+		
+		/* 익명(이름 안붙여준) 클래스로 직접 구현 
+		 * 파이썬 따랗고 싶어서 괴랄한거 짚어넣음*/
 		MyFunc f=new MyFunc() {
 			@Override
 			public int max(int a, int b) {
-				// TODO Auto-generated method stub
 				return a>b? a:b;
 			}
 		};
