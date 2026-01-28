@@ -25,17 +25,25 @@ package com.java_4to7;
 
 public class Java260121 {
 	public static void main(String[] args) {
-		int num1=1;
+		String str1="Love";
+		String str2=null;
 		try {
-			num1= 9/1;
-		}catch(Exception e) {
-			System.out.println("에러났음. "+e.getMessage());
-		}finally {
-			System.out.println("나는 무조건 실행");
-			num1+=1;
-		}
-		System.out.println(num1);
-		
+			/* try 안에 있는 코드들은 에러가 터지기 전까진 순차적으로 수행 해요
+			 * 중간에 에러나는 코드 만났다고 이전 코드가 실행 취소되는건 아니에요 */
+			System.out.println(str1.length());
+			System.out.println(str2.length());
+		}catch(ArithmeticException e) {
+			str2="1";
+		}catch ( NumberFormatException e) {
+			str2="2";
+        }
+		catch (NullPointerException e) {
+			str2="3";
+        }
+		catch ( Exception e) {
+			str2="4";
+        }
+		System.out.println(str2);
 		
 	}
 
