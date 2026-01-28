@@ -28,3 +28,28 @@ public class Java260121 {
 	}
 
 }
+
+
+
+----------------
+
+
+package com.java_4to7;
+
+interface Calculator{
+	int operate(int a, int b);
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		/* JS, Pthyon 을 따라한 람다. new impletement, 
+		 * override 까지 다 생략한 괴상한놈
+		 * 람다 함수는 추상화 method를 하나만 가져야 한다. */
+		Calculator add=(x,y)-> x + y;
+		Calculator multi=(x,y)-> x * y;
+		int result=add.operate(1, 2)
+				+ multi.operate(1, 1);
+		System.out.println(result);
+	}
+
+}
