@@ -29,3 +29,40 @@ public class Java260121 {
 	}
 
 }
+
+
+-----------
+
+package com.java_4to7;
+class Processor{
+	String model;
+	Processor(String m){
+		this.model= m;
+		System.out.println("P-Init");
+	}
+	void process() {
+		System.out.println(model + "동작");
+	}
+}
+class SmartPhone{
+	String name;
+	Processor cpu;
+	
+	SmartPhone(String name, String cpuModel){
+		this.name=name;
+		this.cpu=new Processor(cpuModel);
+		System.out.println("S-Init");
+	}
+	void run() {
+		System.out.print(name+":");
+		cpu.process();
+	}
+}
+public class Java260121 {
+	public static void main(String[] args) {
+		SmartPhone sp=new SmartPhone("갤럭시", "AMD");
+		sp.run();
+		
+	}
+
+}
