@@ -3,10 +3,15 @@ package com.java_4to7;
 
 public class Java260121 {
 	public static void main(String[] args) {
+		/* try 안에 있는 코드를 실행 하다가 에러가 터지면
+		 * catch 로 빠져요.
+		 * try 안에 에러가 안터지면, catch로 안빠져요 */
 		try {
-			int num1= 9/0;
+			int num1= 9/1;
 		}catch(Exception e) {
 			System.out.println("에러났음. "+e.getMessage());
+		}finally {
+			System.out.println("나는 무조건 실행");
 		}
 	}
 
