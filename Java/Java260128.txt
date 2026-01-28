@@ -1,0 +1,13 @@
+package com.java_4to7;
+
+
+public class Java260121 {
+	public static void main(String[] args) {
+		try {
+			int num1= 9/0;
+		}catch(Exception e) {
+			System.out.println("에러났음. "+e.getMessage());
+		}
+	}
+
+}
