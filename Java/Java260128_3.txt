@@ -53,3 +53,33 @@ public class Java260121 {
 	}
 
 }
+
+
+------
+
+package com.java_4to7;
+
+interface Animal{
+	void makeSound();
+	/* default 는 interface에서 함수를 구체화 시킬수 있는 기능.
+	 * default 붙은 함수는 override 꼭 안해도 됨 */
+	default void move() {
+		System.out.println("기어간다");
+	}
+}
+class Cat implements Animal{
+	public void makeSound() {
+		System.out.println("야옹");
+	}
+	public void move() {
+		System.out.println("달려간다");
+	}
+}
+public class Java260121 {
+	public static void main(String[] args) {
+		Animal animal=new Cat();
+		animal.makeSound();
+		animal.move();
+	}
+
+}
