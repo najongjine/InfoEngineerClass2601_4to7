@@ -24,3 +24,23 @@ class Animal:
         pass
 
 a=Animal()
+
+""" 제어문 """
+if True:
+    a=1
+    if True:
+        pass
+elif True:
+    a=2
+else:
+    a=3
+
+a=404
+
+match a:
+    case 200:
+        print("Success")
+    case 404:
+        print("Not Found")
+    case _:
+        print("몰라")
