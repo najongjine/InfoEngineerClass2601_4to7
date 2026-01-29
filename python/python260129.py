@@ -22,3 +22,5 @@ a={"a:":1} # 딕셔네리
 class Animal:
     def __init__(self):
         pass
+
+a=Animal()
