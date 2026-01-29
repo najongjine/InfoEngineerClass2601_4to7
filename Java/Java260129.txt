@@ -30,3 +30,54 @@ public class Java260121 {
 	}
 
 }
+
+
+------
+
+
+package com.java_4to7;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class Student{
+	String name;
+	int score;
+	
+	Student(String name, int score) {
+		this.name=name;
+		this.score=score;
+	}
+}
+public class Java260121 {
+	public static void main(String[] args) {
+		List<Student> list=new ArrayList<>();
+		list.add(new Student("Kim",80));
+		list.add(new Student("Lee",90));
+		list.add(new Student("Park",70));
+		
+		Map<String,Integer> map=new HashMap<>();
+		for(Student s: list) {
+			if(s.score>=80){
+				map.put(s.name,s.score);
+			}
+		}
+		
+		map.put("Kim",map.get("Kim")+10);
+		map.remove("Park");
+		
+		int result=0;
+		if(map.containsKey("Lee")) {
+			result+=map.get("Lee");
+		}
+		if(map.containsKey("Kim")) {
+			result+=map.get("Kim");
+		}
+		System.out.println(result);
+		 
+	}
+
+}
+
