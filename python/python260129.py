@@ -35,20 +35,11 @@ elif True:
 else:
     a=3
 
-a=404
-
-match a:
-    case 200:
-        print("Success")
-    case 404:
-        print("Not Found")
-    case _:
-        print("몰라")
 
 switch={
     1:"One",
     2:"Two",
     3:"Three"
 }
-num=2
+num=287878
 print(switch.get(num,"Invalid"))
