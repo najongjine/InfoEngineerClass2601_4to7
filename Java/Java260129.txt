@@ -1,7 +1,9 @@
 package com.java_4to7;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Java260121 {
 	public static void main(String[] args) {
@@ -11,7 +13,19 @@ public class Java260121 {
 		 nums[1]=2;
 		 nums[2]=3;
 		 
+		 /* List는 배열이랑은 틀리게 추가를 맘껏 할수도 있고, 삭제도 맘껏 할수 있어요*/
 		 List<Integer> nums2=new ArrayList<Integer>(); 
+		 nums2.add(1);
+		 nums2.add(2);
+		 nums2.remove(0);
+		 
+		 /* Map 도 무한정 추가와 삭제 할수 있어요.
+		  * List는 index 번호로 접근 했다면, map은 key 이름으로 접근 해요 */
+		 Map<String, Integer> score=new HashMap<>();
+		 score.put("Kim",90);
+		 score.put("Lee", 60);
+		 score.get("Kim");
+		 score.remove("Kim");
 		 
 	}
 
