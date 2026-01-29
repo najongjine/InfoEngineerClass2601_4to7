@@ -1,0 +1,18 @@
+package com.java_4to7;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Java260121 {
+	public static void main(String[] args) {
+		/* 자바하고 c언어는 배열크기를 한번 정하면 못 늘려요 */
+		 int [] nums=new int[3];
+		 nums[0]=1;
+		 nums[1]=2;
+		 nums[2]=3;
+		 
+		 List<Integer> nums2=new ArrayList<Integer>(); 
+		 
+	}
+
+}
