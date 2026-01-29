@@ -44,3 +44,11 @@ match a:
         print("Not Found")
     case _:
         print("몰라")
+
+switch={
+    1:"One",
+    2:"Two",
+    3:"Three"
+}
+num=2
+print(switch.get(num,"Invalid"))
