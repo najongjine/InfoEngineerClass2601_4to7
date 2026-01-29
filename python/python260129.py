@@ -18,3 +18,7 @@ a=[1,2,3] # 배열, list
 a=(1,2,3) # 튜플
 a={1,2,3} # 세트
 a={"a:":1} # 딕셔네리
+
+class Animal:
+    def __init__(self):
+        pass
