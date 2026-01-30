@@ -59,6 +59,9 @@ a.remove([1,2]) # 원본에서 똑같이 생긴 놈을 제거
 print(f"a: {a}")
 
 a=[1,2,3,4,5,6,7]
+# 팝콘이 팝 튀는 것처럼 튀어나오고 원본에선 제거. index 기준
 print(f"a.pop(1):{a.pop(1)}")
-print(f"a:{a}")
+
+del a[0]
+print(f"a:{a}") # index 기준으로 삭제
 
