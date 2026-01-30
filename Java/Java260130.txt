@@ -37,6 +37,7 @@ class Child extends Parent{
 		System.out.print("E ");
 	}
 	Child(int b){
+		//super();
 		this.b+=b;
 		System.out.print("F ");
 	}
