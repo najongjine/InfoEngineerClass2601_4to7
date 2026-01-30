@@ -33,3 +33,6 @@ for e in a:
     print(e+"a")
 
 print(f"a[-1]:{a[-1]}")
+
+a="hello"
+print(f"a[0:2]:{a[0:2]}") # 0~1 까지. 2는 포함 안함
