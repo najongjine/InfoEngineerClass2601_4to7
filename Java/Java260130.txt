@@ -1,0 +1,56 @@
+package com.java_4to7;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class Parent{
+	static int a=10;
+	static {
+		a=20;
+		System.out.print("A ");
+	}
+	int b=30;
+	
+	Parent(){
+		this(50);
+		System.out.print("B ");
+	}
+	Parent(int b){
+		this.b+=b;
+		System.out.print("C ");
+	}
+	void display() {
+		System.out.print(a+b+" ");
+	}
+}
+
+class Child extends Parent{
+	static {
+		a=40;
+		System.out.print("D ");
+	}
+	int b=5;
+	Child(){
+		super();
+		System.out.print("E ");
+	}
+	Child(int b){
+		this.b+=b;
+		System.out.print("F ");
+	}
+	void display() {
+		System.out.println(a+b+" ");
+	}
+}
+
+
+public class Java260121 {
+	public static void main(String[] args) {
+		Parent p=new Child(10);
+		p.display();
+		 
+	}
+
+}

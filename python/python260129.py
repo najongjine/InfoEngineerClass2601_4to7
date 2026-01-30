@@ -43,3 +43,6 @@ switch={
 }
 num=287878
 print(switch.get(num,"Invalid"))
+
+def add(a):
+    return a+add(a)
