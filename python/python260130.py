@@ -18,3 +18,18 @@ a=50
 print(f"{40<= a <= 55}")
 print(f"{a>=40 and a<=55}")
 
+print("a" in "task")
+print("z" not in "task")
+
+a=["불고기","비빔밥"]
+c=["짜장","짬뽕"]
+k=[a,c]
+
+a[0]="바꿈"
+print(k)
+
+a="hello python"
+for e in a:
+    print(e+"a")
+
+print(f"a[-1]:{a[-1]}")
