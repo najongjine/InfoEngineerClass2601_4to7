@@ -79,3 +79,6 @@ a=[1,2,3]
 b=[10,20]
 result=[x+y for x in a for y in b]
 print(result)
+""" list comprehensive 연습문제 END """
+
+
