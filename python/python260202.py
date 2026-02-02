@@ -36,4 +36,6 @@ a=[ x+1 for x in range(4) ]
  True 라서 [x 에 담아요
 """
 a=[x for x in range(10) if x>5]
+
+a=[x if x>5 else x+2 for x in range(10) ]
 print(a)
