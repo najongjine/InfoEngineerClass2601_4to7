@@ -21,5 +21,7 @@ a=[ x for x in range(3) ]
 3-
 """
 a=[ x+1 for x in range(4) ]
-print(a)
 
+
+a=[x for x in range(10) if x<5]
+print(a)
