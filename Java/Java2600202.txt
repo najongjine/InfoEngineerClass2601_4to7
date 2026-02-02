@@ -1,6 +1,8 @@
 package com.java_4to7;
 
 class MyThread extends Thread{
+	/* Thread 를 상속 받았으면 run() 메소드를 반드시 오버라이드 하여
+	 * 구현 해줘야해요 */
 	public void run() {
 		for(int i=0;i<5;i++) {
 			System.out.println("Thread 상속 실행중:"+i);
@@ -11,7 +13,10 @@ class MyThread extends Thread{
 public class Java260121 {
 	public static void main(String[] args) {
 		MyThread t1=new MyThread();
-		 t1.start();
+		/* Thread 를 상속받은 클래스는 .start() 를 호출해야
+		 * run() 메소드락 실행되요
+		 * 요점은 start() 메소드 나 만든적 없는데 어디갔어? 하고 놀라지 마세요 */
+		t1.start();
 	}
 
 }
