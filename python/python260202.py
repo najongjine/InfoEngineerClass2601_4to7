@@ -72,4 +72,10 @@ b=[x*2 for x in a if x %2==0]
 
 word = "Python"
 result=[char.upper() for char in word if char not in 'aeiou']
-print("".join(result))
+# ".join("ab") 은 문자열에 ab 붙이기"
+#print("".join(result))
+
+a=[1,2,3]
+b=[10,20]
+result=[x+y for x in a for y in b]
+print(result)
