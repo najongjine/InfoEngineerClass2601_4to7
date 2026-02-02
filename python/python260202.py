@@ -37,5 +37,18 @@ a=[ x+1 for x in range(4) ]
 """
 a=[x for x in range(10) if x>5]
 
+"""
+1. for x in range(10)
+2. if x>5 else x+2
+3. [x
+
+0 1 2 3 4 5 6 7 8 9
+0- for 0
+ else 로 빠지고 0+2
+ 2를 [x 에 담아요
+7- for 7
+ 7>5 로 빠지고
+ 7을 [x 에 담아요
+"""
 a=[x if x>5 else x+2 for x in range(10) ]
 print(a)
