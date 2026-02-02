@@ -23,5 +23,5 @@ a=[ x for x in range(3) ]
 a=[ x+1 for x in range(4) ]
 
 
-a=[x for x in range(10) if x<5]
+a=[x for x in range(10) if x>5]
 print(a)
