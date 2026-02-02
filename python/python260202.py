@@ -11,7 +11,7 @@ range 에 있는 원소를 for loop
 2
 """
 a=[ x for x in range(3) ]
+
+a=[ x+1 for x in range(4) ]
 print(a)
-print("-------")
-for x in range(3):
-    print(x)
+
