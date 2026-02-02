@@ -26,6 +26,14 @@ a=[ x+1 for x in range(4) ]
 1. for x in range(10)
 2. if x>5
 3. [x
+
+0 1 2 3 4 5 6 7 8 9
+0- for 0 에 담아요
+ if 0>5 조건체크 해요
+ True 아니라서 [x 에 안담아요
+7- for 7 에 담아요
+ if 7>5 조건체크 해요
+ True 라서 [x 에 담아요
 """
 a=[x for x in range(10) if x>5]
 print(a)
