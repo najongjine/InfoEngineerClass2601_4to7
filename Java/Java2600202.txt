@@ -20,3 +20,46 @@ public class Java260121 {
 	}
 
 }
+
+
+-----
+
+
+package com.java_4to7;
+
+/*
+public class Thread {
+    private Runnable target; // 실행할 작업(Runnable)을 저장하는 변수
+
+    // Runnable을 인자로 받는 생성자
+    public Thread(Runnable target) {
+        this.target = target;
+    }
+
+    public void run() {
+        if (target != null) {
+            target.run(); // 전달받은 Runnable의 run()을 대신 실행!
+        }
+    }
+}
+ * */
+class MyRunnable implements Runnable{
+	/* Runnable 를 상속 받았으면 run() 메소드를 반드시 오버라이드 하여
+	 * 구현 해줘야해요 */
+	public void run() {
+		for(int i=0;i<5;i++) {
+			System.out.println("Thread 상속 실행중:"+i);
+		}
+	}
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		/* Thread 클래스 안에 Runnable을 받을수 있는
+		 * 오버로딩된 생성자가 있어요. */
+		Thread t1=new Thread(new MyRunnable());
+		t1.start();
+	}
+
+}
+
