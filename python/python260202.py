@@ -51,4 +51,8 @@ a=[x for x in range(10) if x>5]
  7을 [x 에 담아요
 """
 a=[x if x>5 else x+2 for x in range(10) ]
+
+
+a=[50,85,95,70]
+a=['A' if n>=90 else 'B' if n>=80 else 'C' for n in a]
 print(a)
