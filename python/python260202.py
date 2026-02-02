@@ -12,6 +12,14 @@ range 에 있는 원소를 for loop
 """
 a=[ x for x in range(3) ]
 
+"""
+0 - for 0 담기. 아무이상 없네.
+0+1 에 담기
+1 - for 1 담기. 아무이상 없네?
+1+1 에 담기
+2-
+3-
+"""
 a=[ x+1 for x in range(4) ]
 print(a)
 
