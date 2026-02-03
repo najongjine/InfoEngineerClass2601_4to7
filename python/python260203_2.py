@@ -7,6 +7,6 @@ def func2():
 def func3(a,b):
     return a+b
 
-a=1
+a=[1,2]
 b=2
 print(func3(a,b))
