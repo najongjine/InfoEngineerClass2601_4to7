@@ -24,3 +24,26 @@ c=a^b # {2,3}
 # list 중복 제거 방식.
 a=list(set([1,2,3,3,3,3]))
 print(a)
+
+""" set 연습문제 """
+data1 = [1, 2, 3, 4, 5, 5]
+data2 = [4, 5, 6, 7, 8]
+
+# 1. 중복 제거 및 집합 변환
+set1 = set(data1)
+set2 = set(data2)
+
+# 2. 집합 연산
+intersect = set1 & set2
+union = set1 | set2
+
+# 3. 데이터 추가 및 수정
+union.add(10)
+if 5 in intersect:
+    union.discard(5)
+
+# 4. 결과 연산 및 출력
+result = sorted(list(union - intersect))
+print(result)
+
+""" set 연습문제 END """
