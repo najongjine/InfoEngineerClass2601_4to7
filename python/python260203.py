@@ -54,3 +54,9 @@ result = sorted(list(union - intersect))
 print(result)
 
 """ set 연습문제 END """
+
+"""
+tuple -
+변경 불가능 (Immutable): 요소를 추가, 삭제, 수정할 수 없습니다.
+"""
+a=(1,2)
