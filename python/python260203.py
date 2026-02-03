@@ -75,3 +75,11 @@ print(a, b)
 items = (1, 2, 2, 3, 2)
 # items.index(2) := 2가 처음으로 등장했을때의 index 번호
 print(items.count(2) + items.index(2))
+
+a, *b, c = (1, 2, 3, 4, 5)
+#print(b) # [2,3,4]
+
+a=(1,2)
+b=(1,3)
+c= a+b # (1,2,1,3)
+
