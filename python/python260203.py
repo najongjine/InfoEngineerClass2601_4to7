@@ -20,6 +20,7 @@ b={1,3}
 #c=a&b # {1}
 #c=a-b # {2}
 c=a^b # {2,3}
-print(c)
 
+# list 중복 제거 방식.
 a=list(set([1,2,3,3,3,3]))
+print(a)
