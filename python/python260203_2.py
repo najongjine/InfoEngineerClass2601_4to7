@@ -30,3 +30,11 @@ a={"a":1,"b":2}
 a["a"]=2
 a["c"]=3
 print(a)
+
+
+""" 재귀 함수 """
+
+def rec(a):
+    if a<=0:
+        return 0
+    return a+rec(a-1)
