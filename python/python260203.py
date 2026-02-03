@@ -30,19 +30,26 @@ data1 = [1, 2, 3, 4, 5, 5]
 data2 = [4, 5, 6, 7, 8]
 
 # 1. 중복 제거 및 집합 변환
-set1 = set(data1)
+# {1,2,3,4,5}
+set1 = set(data1) 
+# {4,5,6,7,8}
 set2 = set(data2)
 
 # 2. 집합 연산
+# {4,5}
 intersect = set1 & set2
+# {1,2,3,4,5,6,7,8}
 union = set1 | set2
 
 # 3. 데이터 추가 및 수정
+# {1,2,3,4,5,6,7,8,10}
 union.add(10)
 if 5 in intersect:
+    # {1,2,3,4,6,7,8,10}
     union.discard(5)
 
 # 4. 결과 연산 및 출력
+# List({1,2,3,6,7,8,10}) -> 정렬
 result = sorted(list(union - intersect))
 print(result)
 
