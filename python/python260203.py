@@ -58,5 +58,20 @@ print(result)
 """
 tuple -
 변경 불가능 (Immutable): 요소를 추가, 삭제, 수정할 수 없습니다.
+순서 있음 (Ordered): 리스트처럼 인덱싱(t[0])과 슬라이싱(t[1:3])이 가능합니다.
+중복 허용: 동일한 값을 여러 개 가질 수 있습니다.
 """
 a=(1,2)
+
+# 요건 안되요. 그냥 정수로 인식 해요. 튜플은 꼭 , 가 있어야 해요
+a=(1)
+
+
+a = 10
+b = 20
+a, b = b, a + b
+print(a, b)
+
+items = (1, 2, 2, 3, 2)
+# items.index(2) := 2가 처음으로 등장했을때의 index 번호
+print(items.count(2) + items.index(2))
