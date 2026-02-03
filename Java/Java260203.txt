@@ -1,0 +1,16 @@
+class Parent {
+    int x = 10;
+    Parent() { this.show(); }
+    void show() { System.out.print("P" + x); }
+}
+class Child extends Parent {
+    int x = 20;
+    Child() { super(); }
+    void show() { System.out.print("C" + x); }
+}
+public class Main {
+    public static void main(String[] args) {
+        Parent p = new Child();
+        System.out.print(" " + p.x);
+    }
+}
