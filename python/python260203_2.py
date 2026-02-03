@@ -40,3 +40,26 @@ def rec(a):
     return a+rec(a-1)
 
 print(rec(4))
+
+
+""" 연습문제 """
+def func(n, data):
+    if n <= 0:
+        return []
+    
+    # 1. 슬라이싱과 리스트 컴프리헨션
+    res = [x for x in data if x % n == 0]
+    
+    # 2. 튜플 언패킹과 재귀 호출
+    return res + func(n - 2, data[1:])
+
+# 초기 데이터
+values = [2, 4, 6, 8, 10, 12]
+n_val = 4
+
+# 실행
+result = func(n_val, values)
+
+# 3. 집합을 이용한 중복 제거 및 정렬
+final = sorted(list(set(result)), reverse=True)
+print(final)
