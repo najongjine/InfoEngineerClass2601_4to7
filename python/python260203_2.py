@@ -59,6 +59,7 @@ n_val = 4
 
 # 실행
 result = func(n_val, values)
+print(f"result:{result}")
 
 # 3. 집합을 이용한 중복 제거 및 정렬
 final = sorted(list(set(result)), reverse=True)
