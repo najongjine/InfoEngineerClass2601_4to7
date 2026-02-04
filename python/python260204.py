@@ -10,11 +10,14 @@ class Animal:
         self.leg=leg
         self.fur=fur
         self.eye="눈 2개"
-        pass
+    def makesound(self,str1="으르렁"):
+        print(str1)
     
 
 bird=Animal()
 dog=Animal()
+dog.makesound()
 
-def func1(a=1,b=2):
-    print(f"a:{a},b:{b}")
+
+
+    
