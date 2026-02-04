@@ -23,6 +23,9 @@ class Animal2:
 
 dog=Animal2();
 cat=Animal2();
+Animal2.leg=2
+
+
 print(f"dog.leg:{dog.leg}")
 print(f"cat.leg:{cat.leg}")
 
