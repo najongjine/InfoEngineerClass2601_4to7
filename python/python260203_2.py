@@ -79,6 +79,10 @@ for item in data:
         s_sum+=s
     
     if s_sum>=160:
+        # dictionary 에 새로운 key와 값 한번에 넣기
         result[item['id']]='Pass'
     else:
         result[item['id']]='Fail'
+
+# result:{1: 'Pass', 2: 'Fail', 3: 'Fail'}
+print(f"result:{result}")
