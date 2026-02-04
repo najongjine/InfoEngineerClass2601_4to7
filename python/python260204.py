@@ -18,6 +18,14 @@ bird=Animal()
 dog=Animal()
 dog.makesound()
 
+class Animal2:
+    leg=4
+
+dog=Animal2();
+cat=Animal2();
+print(f"dog.leg:{dog.leg}")
+print(f"cat.leg:{cat.leg}")
+
 
 
     
