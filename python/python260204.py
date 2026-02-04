@@ -21,9 +21,11 @@ dog.makesound()
 class Animal2:
     # 클래스 변수. 자바의 static 약간 비슷
     leg=4
+    __secret="비밀"
 
 dog=Animal2();
 cat=Animal2();
+print(dog.__secret)
 """ 
 객체.뭐뭐
 파이썬은 자바처럼 클래스 안에 속성 일일히 적지 않아도,
