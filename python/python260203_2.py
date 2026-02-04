@@ -64,3 +64,21 @@ print(f"result:{result}")
 # 3. 집합을 이용한 중복 제거 및 정렬
 final = sorted(list(set(result)), reverse=True)
 print(final)
+
+""" dictionary 연습문제 """
+data=[
+    {"id":1,"score":[80,90]},
+    {"id":2,"score":[70,85]},
+    {"id":3,"score":[95,60]}
+]
+
+result={}
+for item in data:
+    s_sum=0
+    for s in item['score']:
+        s_sum+=s
+    
+    if s_sum>=160:
+        result[item['id']]='Pass'
+    else:
+        result[item['id']]='Fail'
