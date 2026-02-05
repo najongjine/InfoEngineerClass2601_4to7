@@ -1,2 +1,5 @@
 DATABASE_URL=
 postgresql://neondb_owner:npg_UxPTaulwgc09@ep-cool-river-ainhkgrr-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require
+
+https://wildojisan.tistory.com/category/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/DB
+- DB DCL, DDL, DML 이론
