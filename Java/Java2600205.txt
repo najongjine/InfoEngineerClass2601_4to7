@@ -1,0 +1,24 @@
+package com.java_4to7;
+
+enum Day{
+	sunday(1),
+	monday(2),
+	tuesday(3);
+
+	int day;
+	Day(int val){
+		this.day=val;
+	}
+	public int getDay() {
+		return day;
+	}
+	
+}
+
+public class Java260121 {
+	public static void main(String[] args) {
+		Day day=Day.monday;
+		System.out.println(day.getDay());
+	}
+
+}
