@@ -205,7 +205,7 @@ if (A and B):    # 조건문 (결정 포인트)
 2. 결정 커버리지 (Decision Coverage) = 분기 커버리지
     목표: if문의 **최종 결과(Result)**가 True인 경우와 False인 경우를 각각 최소 1번씩 확인.
 
-    논리: (A and B) 전체 덩어리의 결과값(T/F)에만 집중.
+    논리: if(A and B) 전체 덩어리의 결과값(T/F)에만 집중.
 
     테스트 케이스 (예시):
 
@@ -216,7 +216,7 @@ if (A and B):    # 조건문 (결정 포인트)
     특징: 전체 결과만 신경 쓰고, A나 B가 각각 True/False를 다 가졌는지는 따지지 않음.
 
 3. 조건 커버리지 (Condition Coverage) 🔥(가장 헷갈리는 부분)
-    목표: 괄호 안의 **개별 조건 변수(A, B)**가 각각 True 한 번, False 한 번씩 값을 가져봐야 함.
+    목표: 괄호 안의 **개별 조건 변수 if(A, B)**가 각각 True 한 번, False 한 번씩 값을 가져봐야 함.
 
     논리: 전체 결과가 True냐 False냐는 중요하지 않음. A가 T/F 다 해봤나? B가 T/F 다 해봤나? 이것만 봄.
 
@@ -241,7 +241,9 @@ if (A and B):    # 조건문 (결정 포인트)
 
     A=False, B=False → (개별 다 만족, 전체 결과 False)
 
+
     설명: 가장 합리적으로 꼼꼼한 단계.
+
 
 5. 다중 조건 커버리지 (Multiple Condition Coverage)
     목표: 진리표(Truth Table)의 모든 경우의 수를 다 테스트.
@@ -319,6 +321,15 @@ p416
 
 전진오류제어 Hamming code, 후진오류제어 parity bit, crc, 다항식 코드, ARQ
 p418
+전진오류(FEC){
+    hamming code
+    상승코드(Convolutional Code)
+}
+후진오류(BEC){
+    parity - 1 비트 추가
+    블록합(BSC)
+    CRC
+}
 
 다중화기 MUX, 집중화기 Concentrator, CSMA, 네트워크 토폴로지 star bus ring tree mesh
 p422
