@@ -20,7 +20,7 @@ p69
 
 UML 일반화관계 집합관계 연관관계 gillamet, stereo type, 구조적 diagram, 행위 diagram
 소프트웨어 아키텍처 pip-filter 패턴, broker 패턴, peer to peer 패턴, MVC 패턴
-p72
+p72, 107
 
 구조,정적 다이어그램
 멈춰있는 뼈대 (클래스)
